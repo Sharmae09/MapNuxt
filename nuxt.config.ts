@@ -2,6 +2,11 @@ import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 export default defineNuxtConfig({
   // css: ["@/assets/styles/settings.scss"],
   // css: ["mapbox-gl/dist/mapbox-gl.css"],
+  runtimeConfig: {
+    public: {
+      GOOGLE_MAPS_API_KEY: process.env.GOOGLE_MAPS_API_KEY,
+    },
+  },
   compatibilityDate: "2024-11-01",
   ssr: false,
   //...

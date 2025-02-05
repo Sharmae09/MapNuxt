@@ -12,13 +12,18 @@ const MAPBOX_ACCESS_TOKEN =
 onMounted(() => {
   mapboxgl.accessToken = MAPBOX_ACCESS_TOKEN;
 
+  // const map = new mapboxgl.Map({
+  //   container: "map",
+  //   style: "mapbox://styles/mapbox/streets-v11", // Change style if needed
+  //   center: [123.4832, 13.2924], // Bicol University Polangui Campus coordinates
+  //   zoom: 15, // Adjust zoom level
+  // });
   const map = new mapboxgl.Map({
     container: "map",
-    style: "mapbox://styles/mapbox/streets-v11", // Change style if needed
-    center: [123.4832, 13.2924], // Bicol University Polangui Campus coordinates
-    zoom: 15, // Adjust zoom level
+    style: "mapbox://styles/mapbox/satellite-v9", // Pure satellite image
+    center: [123.4832, 13.2924],
+    zoom: 15,
   });
-
   map.addControl(new mapboxgl.NavigationControl()); // Add zoom controls
 });
 </script>

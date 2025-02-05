@@ -1,6 +1,9 @@
 <template>
   <div id="layout">
-    <MapboxMap />
+    <!-- <MapboxMap /> -->
+    <p>sasa</p>
+
+    <!-- <Gmaps /> -->
   </div>
 </template>
 
